@@ -6,25 +6,25 @@ cask "kpg" do
     end
   end
 
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     on_arm do
-      sha256 "2ca080ab4ade62afd261162d5dea1ae918e82aefa7840e90d910d2dd8abf29f1"
+      sha256 "2bd3a7faca4e549a7b5a17175d647bb563511bef391c90093e0536cbff110281"
       url "https://github.com/pscheid92/kpg/releases/download/v#{version}/kpg_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "b5b0848d19e5826a97843b8fb3ce761b3494819b0048009451b5e24b06670e15"
+      sha256 "e7cd1de02cfb06c0af6b9fca99eb6c8bfc134f0ff74e51a5e1c5c029767c0b4b"
       url "https://github.com/pscheid92/kpg/releases/download/v#{version}/kpg_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "1969c70f3ed7db0420464dd0a31a2c94e945ea7ac33557dfc2294682ca85fc6c"
+      sha256 "c3793d68e82f80116dbd319a4b7cf6c7860e618c4341000a8939f8d583f8e4e6"
       url "https://github.com/pscheid92/kpg/releases/download/v#{version}/kpg_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "ec6025579bda63a4501ead8c9c209a2e9c60973e055caced65c11b5f5fd51138"
+      sha256 "a59e4d3e895acd496475f26f06b808a531bdc3c3498719c38733759450ef4586"
       url "https://github.com/pscheid92/kpg/releases/download/v#{version}/kpg_#{version}_linux_amd64.tar.gz"
     end
   end
