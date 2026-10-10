@@ -32,6 +32,7 @@ cask "pqsign" do
   end
 
   binary "pqsign"
+  generate_completions_from_executable "pqsign", "completions"
 
   # The release binaries are not notarized, so Gatekeeper would block the quarantined download.
   preflight_steps do
