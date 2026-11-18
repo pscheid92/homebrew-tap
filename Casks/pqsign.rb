@@ -1,23 +1,23 @@
 cask "pqsign" do
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     on_arm do
-      sha256 "f942a369a433b1f266b6675331204a9ea630a5482970e0f9cf02601d5adc21e4"
+      sha256 "28c8f49a950889e1bb38dd73f33543c2615adbbf4123b35523e6b6c571367a3f"
       url "https://github.com/pscheid92/pqsign/releases/download/v#{version}/pqsign-aarch64-apple-darwin.tar.gz"
     end
     on_intel do
-      sha256 "db33d7e7c72591debcbe57148765b634c3cd466a251c3d7615077f5e6b406704"
+      sha256 "c2c27ba2b082852199eb6ada56bebb7e859646a2d98f6ebabbaa2536799ac667"
       url "https://github.com/pscheid92/pqsign/releases/download/v#{version}/pqsign-x86_64-apple-darwin.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "9d0296501b9d0c73e44185b72fa35c515a5704c737b43aa8650ee96da0ee7c96"
+      sha256 "b874b47cac1d15bcd2737ce0688daa0a71c9ac6799accf30e6bf7eb3cdabe29e"
       url "https://github.com/pscheid92/pqsign/releases/download/v#{version}/pqsign-aarch64-unknown-linux-gnu.tar.gz"
     end
     on_intel do
-      sha256 "f4b560c430ddfbbc2c9d99502502fbec6f427b545e772ed3f0c177d24ce68a16"
+      sha256 "74b78cf23d4e1840f10e44882d0f049af2d49b928a1a9240ad079fcf921d5ace"
       url "https://github.com/pscheid92/pqsign/releases/download/v#{version}/pqsign-x86_64-unknown-linux-gnu.tar.gz"
     end
   end
@@ -41,5 +41,5 @@ cask "pqsign" do
     end
   end
 
-  # No zap stanza required
+  zap :not_required
 end
